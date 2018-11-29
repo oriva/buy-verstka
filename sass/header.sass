@@ -36,6 +36,8 @@
 	&__gadget-img
 		display: block
 		width: 100%
+		@include transform(translateY(10px))
+		@include transition(.3s)
 	&__gadget-name
 		display: block
 		font-size: 36px
@@ -53,17 +55,23 @@
 		display: block
 		position: relative
 		margin-left: auto
-		padding: 9px 15px
+		padding: 10px 30px
 		border-top-left-radius: 20px
 		border-bottom-left-radius: 20px
 		background-color: #fff
+		@include transform(translateX(5px))
 		img
 			width: 10px
 			height: 10px
-			margin-right: 5px
+			margin-right: 12px
+		&:hover
+			@include transform(translateX(0))
 	&__first
 		background: linear-gradient(180deg, #91EBFC, #7DB0E3)
 	&__third
 		background: linear-gradient(180deg, #DDFFCB, #A8E561)
 	&__fifth
 		background: linear-gradient(180deg, #F4E5B7, #FFC54B)
+	&:hover
+		.card-item__gadget-img
+			@include transform(translateY(0))
