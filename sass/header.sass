@@ -39,9 +39,23 @@
 		@include transform(translateY(10px))
 		@include transition(.3s)
 	&__gadget-name
-		display: block
+		position: relative
+		display: table
 		font-size: 36px
 		font-weight: bold
+		margin-left: auto
+		padding-left: 5px
+		span
+			position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 100%
+			background-color: #fff
+			width: 100%
+			height: 100%
+			@include transition(.3s)
 	&__gadget-price
 		display: block
 		font-size: 30px
@@ -75,3 +89,5 @@
 	&:hover
 		.card-item__gadget-img
 			@include transform(translateY(0))
+		.card-item__gadget-name:before
+			left: 0
