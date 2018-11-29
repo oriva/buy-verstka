@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.35 7.733">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <g id="shopping-cart" transform="matrix(0.998, -0.07, 0.07, 0.998, -1.332, -18.511)">
+    <g id="Group_6" data-name="Group 6" transform="translate(2.642 25.09)">
+      <g id="Group_5" data-name="Group 5">
+        <path id="Path_8" data-name="Path 8" class="cls-1" d="M170.357,402.828a.7.7,0,1,0,.7.7A.7.7,0,0,0,170.357,402.828Zm0,1.011a.31.31,0,1,1,.31-.31A.31.31,0,0,1,170.357,403.839Z" transform="translate(-169.656 -402.828)"/>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(5.102 25.09)">
+      <g id="Group_7" data-name="Group 7">
+        <path id="Path_9" data-name="Path 9" class="cls-1" d="M328.3,402.828a.7.7,0,1,0,.7.7A.7.7,0,0,0,328.3,402.828Zm0,1.011a.31.31,0,1,1,.31-.31A.31.31,0,0,1,328.3,403.839Z" transform="translate(-327.601 -402.828)"/>
+      </g>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(2.974 21.398)">
+      <g id="Group_9" data-name="Group 9" transform="translate(0 0)">
+        <path id="Path_10" data-name="Path 10" class="cls-1" d="M194,165.755h-2.806a.2.2,0,1,0,0,.392H194a.2.2,0,1,0,0-.392Z" transform="translate(-190.996 -165.755)"/>
+      </g>
+    </g>
+    <g id="Group_12" data-name="Group 12" transform="translate(3.127 22.415)">
+      <g id="Group_11" data-name="Group 11">
+        <path id="Path_11" data-name="Path 11" class="cls-1" d="M203.5,231.035H201a.2.2,0,1,0,0,.392h2.5a.2.2,0,1,0,0-.392Z" transform="translate(-200.802 -231.035)"/>
+      </g>
+    </g>
+    <g id="Group_14" data-name="Group 14" transform="translate(0 19.114)">
+      <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
+        <path id="Path_12" data-name="Path 12" class="cls-1" d="M7.886,20.526a.39.39,0,0,0-.3-.144h-6.1l-.123-.6a.392.392,0,0,0-.228-.28L.273,19.13a.2.2,0,0,0-.156.359l.859.373.947,4.6a.393.393,0,0,0,.384.313H7a.2.2,0,1,0,0-.392H2.308l-.115-.559H7.035a.393.393,0,0,0,.384-.313l.548-2.658A.39.39,0,0,0,7.886,20.526Zm-.851,2.906H2.112l-.548-2.658H7.582Z" transform="translate(0 -19.114)"/>
+      </g>
+    </g>
+  </g>
+</svg>

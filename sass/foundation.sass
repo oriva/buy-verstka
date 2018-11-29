@@ -1,0 +1,157 @@
+@import "mixins"
+@import "fonts"
+input[type='number']
+  -moz-appearance: textfield
+input[type=number]::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  margin: 0
+html
+  overflow-x: hidden
+html, body
+  min-height: 100%
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  margin: 0
+  font-family: 'Helvetica', serif
+  font-weight: normal
+  font-style: normal
+  width: 100%
+  color: #3267EE
+  overflow: hidden
+  &:active,:hover,:focus
+    outline: 0
+    outline-offset: 0
+body, input, textarea, select, button
+  direction: ltr
+  font-synthesis: none
+  -moz-font-feature-settings: 'kern'
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  span
+    font-synthesis: none
+    -moz-font-feature-settings: 'kern'
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+button
+  border: 0
+  border-radius: 0
+  margin: 0
+  font-size: 18px
+  cursor: pointer
+  vertical-align: center
+  @include transition(0.3s ease all)
+  &:hover
+    @include transform(scale(1.05))
+  span
+    cursor: pointer
+input
+  padding: 10px
+  border: 2px #4a5680 solid
+  -webkit-border-radius: 40px
+  -moz-border-radius: 40px
+  border-radius: 40px
+  @include placeholder
+    @include transition(.3s)
+  &:focus
+    @include placeholder
+      color: transparent
+h1,h2,h3,h4,h5,p,a,i,span,address,li,label,small,input,textarea,select,button
+  font-family: 'Helvetica', serif
+  font-style: normal
+  font-size: 1em
+  margin: 0
+  line-height: 1
+  letter-spacing: 0.009em
+  &::selection
+    background-color: #707070
+    color: #FFF
+  &::-moz-selection
+    background-color: #707070
+    color: #FFF
+h1,h2,h3,h4,h5,p,span,address,li,label,a:not([href]):not([tabindex])
+  color: #707070
+  cursor: default
+a
+  color: #3267EE
+  text-decoration: none
+h2
+  text-transform: uppercase
+  text-align: center
+ul, li, ol
+  margin: 0
+  padding: 0
+  list-style-type: none
+.overfloff
+  overflow: hidden
+  width: 100%
+.text-left
+  text-align: left!important
+.text-center
+  text-align: center!important
+.text-right
+  text-align: right!important
+.w-100
+  width: 100%
+.h-100
+  height: 100%
+.p-0
+  padding: 0 !important
+.mb-30
+  margin-bottom: 30px
+.political
+  text-align: left
+  position: relative
+  margin-bottom: 30px
+  label
+    display: inline-block
+    padding-left: 30px
+  label, a
+    color: #4a5680
+    line-height: 1em
+  [type="checkbox"]
+    position: absolute
+    opacity: 0
+    &+label
+      &:before, &:after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        @include transition(.3s)
+      &:after
+        content: url("../img/icons/political-yes.svg")
+        margin-top: 7px
+        margin-left: 4px
+        will-change: transform
+        transform-origin: left bottom
+      &:before
+        width: 20px
+        height: 20px
+        border: 2px solid #599255
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        margin-top: 7px
+        background: transparent
+    &:checked
+      &+label
+        &:after
+          @include transform(scale(1.1))
+    &:not(:checked)
+      &+label, &+label a
+        color: #F00
+        &:after
+          @include transform(scale(0))
+          opacity: 0
+        &:before
+          border-color: #F00
+  a
+    text-decoration: #4a5680 solid underline
+    @include transition(.3s)
+    font-size: 1em
+    &:hover
+      opacity: .7
