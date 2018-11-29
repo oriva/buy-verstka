@@ -91,8 +91,10 @@
 		font-size: 36px
 		font-weight: bold
 		align-self: center
-		margin: 0 auto
-		color: #FFF
+		span
+			color: #FFF
+		&.center
+			margin: 0 auto
 	&__first
 		background: linear-gradient(180deg, #91EBFC, #7DB0E3)
 	&__second
@@ -102,8 +104,18 @@
 		display: flex
 	&__third
 		background: linear-gradient(180deg, #DDFFCB, #A8E561)
+	&__fourth
+		background: url("../img/card/bg-about-comp.png")
+		-webkit-background-size: cover
+		background-size: cover
+		display: flex
 	&__fifth
 		background: linear-gradient(180deg, #F4E5B7, #FFC54B)
+	&__sixth
+		background: url("../img/card/bg-bonus.png")
+		-webkit-background-size: cover
+		background-size: cover
+		display: flex
 	&:hover
 		.card-item__gadget-img
 			@include transform(translateY(0))
