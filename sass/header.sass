@@ -2,6 +2,16 @@
 .header
 	width: 100%
 	height: 100vh
+	&__arrow
+		margin: auto
+		width: 50px
+		img
+			width: 100%
+			@include transition(.3s)
+		&:hover
+			cursor: pointer
+			img
+				@include transform(translateY(10%))
 .header-menu
 	width: 100%
 	padding: 32px 0
@@ -35,21 +45,19 @@
 		height: 100%
 	&__gadget-img
 		display: block
-		width: 100%
+		width: 115%
 		@include transform(translateY(10px))
 		@include transition(.3s)
 	&__gadget-name
 		position: relative
-		display: table
+		display: inline-block
 		font-size: 36px
 		font-weight: bold
-		padding: 10px 30px 5px 20px
-		width: 111%
+		padding: 10px 30px
 		margin-left: -10%
 		span
 			position: relative
-			display: block
-			width: 110%
+			display: inherit
 			margin-left: -10%
 		&:before
 			content: ''
@@ -75,10 +83,11 @@
 		display: block
 		position: relative
 		margin-left: auto
-		padding: 10px 30px
+		padding: 10px 40px 10px 30px
 		border-top-left-radius: 20px
 		border-bottom-left-radius: 20px
 		background-color: #fff
+		color: #707070
 		@include transform(translateX(5px))
 		img
 			width: 10px

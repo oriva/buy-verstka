@@ -1,0 +1,21 @@
+.horizontal-form
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  justify-content: space-between
+  &__group
+    position: relative
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -ms-flex-positive: 1
+    flex-grow: 1
+    max-width: 100%
+    padding: 0 15px
+  &__under-input
+    position: absolute
+    top: -1.4em
+    font-weight: 300
+    font-size: 12px
+  &__input
+    width: 100%

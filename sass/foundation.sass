@@ -16,7 +16,7 @@ body
   min-width: 320px
   position: relative
   margin: 0
-  font-family: 'Helvetica', serif
+  font-family: 'Montserrat', serif
   font-weight: normal
   font-style: normal
   width: 100%
@@ -46,19 +46,30 @@ button
   @include transition(0.3s ease all)
   span
     cursor: pointer
+.grey-button
+  background-color: #707070
+  color: #FFF
+  padding: 16px 0
+  width: 100%
+  -webkit-border-radius: 30px
+  -moz-border-radius: 30px
+  border-radius: 30px
 input
-  padding: 10px
-  border: 2px #4a5680 solid
+  padding: 12px 25px
+  border: 1px #707070 solid
   -webkit-border-radius: 40px
   -moz-border-radius: 40px
   border-radius: 40px
+  font-size: 17px
   @include placeholder
     @include transition(.3s)
+    color: #C3C3C3
+    font-style: italic
   &:focus
     @include placeholder
       color: transparent
 h1,h2,h3,h4,h5,p,a,i,span,address,li,label,small,input,textarea,select,button
-  font-family: 'Helvetica', serif
+  font-family: 'Montserrat', serif
   font-style: normal
   font-size: 1em
   margin: 0
@@ -77,8 +88,8 @@ a
   color: #3267EE
   text-decoration: none
 h2
-  text-transform: uppercase
   text-align: center
+  font-weight: 300
 ul, li, ol
   margin: 0
   padding: 0
