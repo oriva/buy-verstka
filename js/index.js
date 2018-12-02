@@ -12,6 +12,9 @@ var swiper = new Swiper('.swiper-container-promo', {
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
+    autoplay: {
+        delay: 2000,
+    },
     coverflow: {
         rotate: 50,
         stretch: 0,
