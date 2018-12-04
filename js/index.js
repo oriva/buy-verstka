@@ -26,3 +26,8 @@ var swiper = new Swiper('.swiper-container-promo', {
         el: '.swiper-pagination',
     },
 });
+
+$('.catalog__more-items').on('click', function (e) {
+    e.preventDefault();
+    $('.catalog-hide').slideToggle();
+});
