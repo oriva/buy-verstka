@@ -3,6 +3,13 @@ var swiper = new Swiper('.big-swiper', {
     autoplay: {
         delay: 2000,
     },
+    breakpoints: {
+        0: {
+            height: 300,
+        },
+        576: {
+        }
+    }
 });
 
 var swiper = new Swiper('.swiper-container-promo', {
@@ -14,6 +21,13 @@ var swiper = new Swiper('.swiper-container-promo', {
     loop: true,
     autoplay: {
         delay: 2000,
+    },
+    breakpoints: {
+        0: {
+            width: 300
+        },
+        576: {
+        }
     },
     coverflow: {
         rotate: 50,
